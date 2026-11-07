@@ -8,21 +8,26 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 import Utilities.Driver;
-
+import io.qameta.allure.testng.AllureTestNg;
+import org.testng.annotations.Listeners;
 import java.io.IOException;
 
+
+@Listeners(AllureTestNg.class)
 public class EBAY_Search extends BaseTest{
 
     EBAY_Page Ebay_Page;
     HelperMethods helperMethods;
 
-    @BeforeMethod()
+    @BeforeMethod
     public void loadTestData() throws IOException {
-        helperMethods = new HelperMethods(driver);
 
         WebDriver driver = Driver.getDriver();
+
+        helperMethods = new HelperMethods(driver);
         Ebay_Page = new EBAY_Page(driver);
 
+        driver.navigate().refresh();
     }
         @Test
         public void openEbayHomepage() throws InterruptedException {

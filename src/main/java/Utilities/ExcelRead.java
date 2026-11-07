@@ -26,9 +26,7 @@ public class ExcelRead {
                 if (row == null) continue;
 
                 String excelKey = formatter.formatCellValue(row.getCell(0)).trim();
-                System.out.println(excelKey);
                 String excelValue = formatter.formatCellValue(row.getCell(1)).trim();
-                System.out.println(excelValue);
 
                 if (excelKey.equalsIgnoreCase(key.trim())) {
                     return excelValue;
