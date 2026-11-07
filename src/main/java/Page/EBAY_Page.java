@@ -20,8 +20,7 @@ public class EBAY_Page {
     By MainPageLogo = By.id("ebayLogoTitle");
     By SearchBar = By.xpath("//input[@id='gh-ac']");
     By SearchButton = By.xpath("//button[@id='gh-search-btn']");
-    By Name_of_Car = By.xpath("//span[contains(text(),'2022 Mazda MX-5 Miata MIATA GRAND TOURING 1 OWNER ')]");
-
+    By Name_of_Car = By.xpath("//li[@id='item3738250fde']//div[@role='heading']");
     By Number_of_Items = By.xpath("//h1[@id='srp-results-heading']");
     By Transmission_click = By.xpath("//span[normalize-space()='Transmission']");
     By Manual_click = By.xpath(

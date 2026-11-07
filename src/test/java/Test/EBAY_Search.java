@@ -31,12 +31,13 @@ public class EBAY_Search extends BaseTest{
     }
         @Test
         public void openEbayHomepage() throws InterruptedException {
-            Ebay_Page.CloseButton_Visible();
-            Ebay_Page.Close_POP_UP_click();
+//            Ebay_Page.CloseButton_Visible();
+//            Ebay_Page.Close_POP_UP_click();
             Ebay_Page.Title_Visible();
             Ebay_Page.Title_GetText();
             Ebay_Page.SearchBar_click();
             Ebay_Page.SearchBar_search();
+            Thread.sleep(2000);
             Ebay_Page.SearchButtonclick();
             Ebay_Page.Name_of_Car_Visible();
             Ebay_Page.Name_of_Car_GetText();
