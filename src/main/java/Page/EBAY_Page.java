@@ -24,7 +24,9 @@ public class EBAY_Page {
 
     By Number_of_Items = By.xpath("//h1[@id='srp-results-heading']");
     By Transmission_click = By.xpath("//span[normalize-space()='Transmission']");
-    By Manual_click = By.xpath("(//div[@class='su-selection-group__label--container'])[1]");
+    By Manual_click = By.xpath(
+            "//input[@name='su-selection-group__aspect-Transmission' and @value='Manual']/ancestor::a"
+    );
 
 
 

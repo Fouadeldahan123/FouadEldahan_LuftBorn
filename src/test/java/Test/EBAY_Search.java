@@ -50,7 +50,7 @@ public class EBAY_Search extends BaseTest{
             Thread.sleep(2000);
             Ebay_Page.Manual_Visible();
             Ebay_Page.Manual_click();
-            Thread.sleep(2000);
+            Thread.sleep(4000);
 
 
         }
