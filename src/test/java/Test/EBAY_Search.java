@@ -18,10 +18,9 @@ public class EBAY_Search extends BaseTest{
 
     @BeforeMethod()
     public void loadTestData() throws IOException {
-        WebDriver driver = Driver.getDriver();
-
         helperMethods = new HelperMethods(driver);
 
+        WebDriver driver = Driver.getDriver();
         Ebay_Page = new EBAY_Page(driver);
 
     }
