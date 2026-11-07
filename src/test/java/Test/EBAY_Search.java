@@ -33,26 +33,17 @@ public class EBAY_Search extends BaseTest{
         public void openEbayHomepage() throws InterruptedException {
             Ebay_Page.CloseButton_Visible();
             Ebay_Page.Close_POP_UP_click();
-            Thread.sleep(2000);
-
             Ebay_Page.Title_Visible();
             Ebay_Page.Title_GetText();
-            Thread.sleep(2000);
-
             Ebay_Page.SearchBar_click();
             Ebay_Page.SearchBar_search();
-            Thread.sleep(2000);
             Ebay_Page.SearchButtonclick();
-            Thread.sleep(2000);
             Ebay_Page.Name_of_Car_Visible();
             Ebay_Page.Name_of_Car_GetText();
-            Thread.sleep(2000);
             Ebay_Page.Number_of_Items_Visible();
             Ebay_Page.Number_of_items_GetText();
-            Thread.sleep(2000);
             Ebay_Page.Transmission_Visible();
             Ebay_Page.Transsion_click();
-            Thread.sleep(2000);
             Ebay_Page.Manual_Visible();
             Ebay_Page.Manual_click();
             Thread.sleep(4000);
