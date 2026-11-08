@@ -1,35 +1,14 @@
 EBAY – Web UI Automation Framework
-
 A Java-based web automation testing framework built using Selenium WebDriver, TestNG, and Maven, following the Page Object Model (POM) design pattern.
 
-The framework is designed to support maintainable, reusable, and scalable automated UI testing, with Allure reporting for test execution analysis.
+Main Components:-
 
-🚀 Technologies & Tools
+1-Page: Contains page classes and web element interactions.
 
-Technology
+2-Utilities: Contains reusable helper methods and supporting utilities.
 
-Purpose
+3-Tests: Contains automated test cases and test execution logic.
 
-Java
+4-testng.xml: Defines the TestNG test suite.
 
-Programming language
-
-Selenium WebDriver 4.27.0
-
-Web UI automation
-
-TestNG 7.7.1
-
-Test execution and test management
-
-Maven
-
-Build and dependency management
-
-Allure Reports
-
-Test execution reporting
-
-Apache POI
-
-Excel data handling
+5-pom.xml: Manages project dependencies and build configuration.
